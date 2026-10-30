@@ -273,7 +273,7 @@ body.com-barra { padding-bottom: 72px; }
 .loja:hover { transform: translateY(-2px); }
 .loja img { width: auto; height: 48px; }
 .loja--play img { height: 66px; margin-block: -9px; }
-.app__celular { display: grid; place-items: center; padding-block: 16px; position: relative; }
+.app__celular { display: grid; place-items: center; align-content: center; padding-block: 16px; position: relative; }
 
 /* iPhone */
 .iphone { position: relative; width: 318px; height: 652px; padding: 8px; border-radius: 60px; background: #7d8085; box-shadow: 0 0 0 2px #c4c6ca, 0 0 0 3px #17181a, 0 50px 80px rgba(0, 0, 0, .5); } /* taste-skill-ignore: sombra do aparelho (mockup de celular) */
@@ -615,3 +615,17 @@ a, button, summary { touch-action: manipulation; }
 .visita { scroll-margin-top: calc(var(--topo-h) + 16px); }
 .visita__plano { margin-bottom: 10px; padding: 10px 16px; border-radius: 12px; background: var(--laranja); color: var(--grafite) !important; font: 650 1rem var(--fonte-titulo); }
 .visita__plano[hidden] { display: none; }
+
+/* App no celular: só o aparelho, que passa sozinho de uma tela para a outra */
+.app__pontos { display: none; }
+.tela:not([hidden]) { animation: tela-entra .45s ease both; }
+@keyframes tela-entra { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .tela:not([hidden]) { animation: none; } }
+@media (max-width: 959px) {
+  .js .app__abas { display: none; }
+  .js .app__pontos { display: flex; justify-content: center; margin-top: 18px; }
+  .app__pontos button { width: 28px; height: 44px; padding: 0; border: 0; background: transparent; cursor: pointer; display: grid; place-items: center; }
+  .app__pontos button::before { content: ""; width: 10px; height: 10px; border-radius: 5px; background: #55524e; transition: width .25s, background-color .25s; }
+  .app__pontos button[aria-current="true"]::before { width: 26px; background: var(--laranja); }
+  .app__celular { flex-direction: column; }
+}

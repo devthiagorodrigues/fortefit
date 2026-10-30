@@ -61,12 +61,20 @@
     obs.observe(contato);
   }
 
-  // Abas do ForteFit App: trocam a tela exibida no celular.
+  // ForteFit App: no computador, as abas trocam a tela do celular; no celular, as telas passam sozinhas.
   const abas = [...document.querySelectorAll('.app__aba')];
   if (abas.length) {
     const telas = abas.map((a) => document.getElementById(a.getAttribute('aria-controls')));
     const menuApp = [...document.querySelectorAll('.ios__tabs span')];
+    const pontos = [...document.querySelectorAll('.app__pontos button')];
+    const celular = window.matchMedia('(max-width: 959px)');
+    const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let atual = 0;
+    let timer = null;
+    let visivel = false;
+
     const abrir = (i, foco) => {
+      atual = i;
       abas.forEach((a, k) => {
         const ativa = k === i;
         a.setAttribute('aria-selected', String(ativa));
@@ -74,8 +82,19 @@
         telas[k].hidden = !ativa;
       });
       menuApp.forEach((m, k) => m.classList.toggle('on', k === i));
+      pontos.forEach((p, k) => (k === i ? p.setAttribute('aria-current', 'true') : p.removeAttribute('aria-current')));
       if (foco) abas[i].focus();
     };
+
+    // Passagem automática: só no celular, só com a seção na tela e só para quem não reduziu o movimento.
+    const parar = () => { clearInterval(timer); timer = null; };
+    const iniciar = () => {
+      parar();
+      if (celular.matches && visivel && !reduzido.matches && !document.hidden) {
+        timer = setInterval(() => abrir((atual + 1) % abas.length), 4500);
+      }
+    };
+
     abas.forEach((a, i) => {
       a.addEventListener('click', () => abrir(i));
       a.addEventListener('keydown', (e) => {
@@ -83,6 +102,14 @@
         if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') { e.preventDefault(); abrir((i - 1 + abas.length) % abas.length, true); }
       });
     });
+    pontos.forEach((p, i) => p.addEventListener('click', () => { abrir(i); iniciar(); }));
+
+    const secaoApp = document.getElementById('app');
+    if (secaoApp && 'IntersectionObserver' in window) {
+      new IntersectionObserver((entradas) => { visivel = entradas[0].isIntersecting; iniciar(); }, { threshold: 0.35 }).observe(secaoApp);
+    }
+    celular.addEventListener('change', iniciar);
+    document.addEventListener('visibilitychange', iniciar);
   }
 
   // Entrada das partes de cada seção: título, texto e imagem aparecem em sequência, uma vez.
