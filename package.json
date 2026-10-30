@@ -1,0 +1,18 @@
+{
+  "name": "fortefit-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site da ForteFit Academia (página única) — projeto demonstrativo de portfólio",
+  "scripts": {
+    "imagens": "node scripts/imagens.mjs",
+    "build": "node scripts/build.mjs",
+    "producao": "node scripts/build.mjs --producao",
+    "preview": "node scripts/build.mjs && python3 -m http.server 4175 --directory public"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.2.0",
+    "@fontsource-variable/outfit": "^5.2.0",
+    "sharp": "^0.35.5"
+  }
+}

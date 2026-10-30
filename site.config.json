@@ -1,0 +1,22 @@
+{
+  "_leia": "Dados da academia exibidos no site. Valores de exemplo (projeto demonstrativo). Depois de editar, rode: npm run build",
+
+  "dominio": "",
+  "_dominio": "Endereço final com https, sem barra no fim. Ex.: https://www.seudominio.com.br",
+
+  "razaoSocial": "ForteFit Academia Ltda.",
+  "cnpj": "00.000.000/0001-00",
+
+  "telefone": "(11) 4000-0000",
+  "whatsapp": "5511900000000",
+  "whatsappLink": false,
+  "_whatsappLink": "false = o número aparece só como texto e nenhum botão leva ao WhatsApp. Troque para true quando o número for real.",
+  "mensagemWhatsapp": "Olá! Quero conhecer a ForteFit e saber mais sobre os planos.",
+
+  "endereco": "Rua da Superação, 100, Centro, São Paulo/SP",
+  "horarios": "Segunda a sexta, das 6h às 22h · Sábado, das 8h às 14h",
+  "horariosFeriados": "Plano Forte: acesso 24 horas, todos os dias, inclusive domingos e feriados.",
+
+  "desenvolvedorUrl": "https://www.thiagolabs.com.br",
+  "ano": 2026
+}

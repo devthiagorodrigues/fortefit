@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ForteFit Academia | Sua força evolui aqui</title>
+  <meta name="description" content="Academia com musculação, cardio, alongamento e orientação de professores no salão, para quem está começando, voltando ou já treina. Agende uma visita.">
+  <meta name="theme-color" content="#151515">
+  {{{robots}}}
+  <link rel="canonical" href="{{canonical}}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="ForteFit Academia">
+  <meta property="og:title" content="ForteFit Academia | Sua força evolui aqui">
+  <meta property="og:description" content="Estrutura, orientação e proximidade para você começar e continuar treinando.">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{dominio}}/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo ForteFit Academia ao lado da fachada da academia ao anoitecer">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preload" href="fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" type="image/avif" href="img/hero-treino-1200.avif" imagesrcset="img/hero-treino-800.avif 800w, img/hero-treino-1200.avif 1200w, img/hero-treino-1536.avif 1536w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json">{{{jsonld}}}</script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="topo" id="topo">
+    <div class="topo__interno caixa">
+      <a class="topo__logo" href="#inicio" aria-label="ForteFit Academia, ir para o início">
+        <img src="img/logo-negativa.svg" width="850" height="267" alt="ForteFit Academia">
+      </a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__icone" aria-hidden="true"></span>
+        <span class="menu-btn__texto">Menu</span>
+      </button>
+      <nav class="menu" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="#app">App</a></li>
+          <li><a href="#conheca">A unidade</a></li>
+          <li><a href="#como-comecar">Como começar</a></li>
+          <li><a href="#contato">Dúvidas</a></li>
+        </ul>
+        <a class="menu__aluno" href="#equipe">Já sou aluno</a>
+        <a class="btn btn--primario btn--compacto" href="#planos">Quero ser ForteFit</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- 1. ABERTURA -->
+    <section class="hero" id="inicio" aria-labelledby="titulo-hero">
+      <div class="hero__fundo">
+        [[img hero-treino | Aluna treinando em um aparelho de cabos enquanto um professor da ForteFit a orienta | 100vw | | eager | 18% 40%]]
+      </div>
+
+      <div class="hero__capa">
+        <div class="hero__interno caixa">
+          <div class="hero__texto">
+            <h1 id="titulo-hero">
+              <span class="linha">Seu treino,</span>
+              <span class="linha destaque">sua rotina.</span>
+            </h1>
+            <p class="lead">Aparelhos, professores no salão e horários que acompanham o seu dia.</p>
+            <a class="hero__pill" href="#conheca">
+              <span class="hero__pill-texto">Agende sua visita</span>
+              <span class="hero__pill-btn" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            </a>
+            <p class="hero__agora" id="agora" role="status"><i aria-hidden="true"></i><span></span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SERVIÇOS -->
+    <section class="secao" id="servicos" aria-labelledby="titulo-servicos">
+      <div class="caixa">
+        <header class="secao__cab">
+          <h2 id="titulo-servicos">Tudo o que você precisa para treinar</h2>
+          <p class="secao__intro">Musculação em primeiro lugar, com cardio, alongamento e professores no salão para você não treinar sozinho.</p>
+        </header>
+        <ul class="servicos-grid">
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img pesos | Salão de musculação com fileiras de halteres, bancos e aparelhos | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 40% 50%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Musculação</h3>
+              <p>Aparelhos de resistência, estações de cabos, bancos, halteres e pesos livres.</p>
+            </div>
+          </li>
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img caminhada | Alunos caminhando nas esteiras do salão de cardio | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 40% 50%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Cardio</h3>
+              <p>Esteiras e bicicletas para aquecer e melhorar o condicionamento, conforme a sua orientação.</p>
+            </div>
+          </li>
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img alongamento | Dois alunos se alongando em colchonetes | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 50% 50%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Alongamento e mobilidade</h3>
+              <p>Colchonetes e acessórios para exercícios orientados.</p>
+            </div>
+          </li>
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img treino-guiado | Professor da ForteFit orientando uma aluna em um aparelho | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 30% 40%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Professores no salão</h3>
+              <p>Eles apresentam os aparelhos, explicam os exercícios e corrigem a execução.</p>
+              <p class="servico-card__nota">Atendimento no salão, diferente de personal trainer exclusivo.</p>
+            </div>
+          </li>
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img recepcao-acolhedora | Recepcionista atendendo uma aluna no balcão | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 50% 50%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Avaliação inicial</h3>
+              <p>Seus objetivos, sua experiência e suas limitações guiam o seu programa inicial.</p>
+            </div>
+          </li>
+          <li class="servico-card">
+            <figure class="servico-card__foto">
+              [[img pausa | Aluna descansando entre séries em um banco de musculação | (min-width: 960px) 360px, (min-width: 640px) 45vw, 92vw | | lazy | 30% 50%]]
+            </figure>
+            <div class="servico-card__texto">
+              <h3>Treino que evolui com você</h3>
+              <p>Conforme você se adapta, o treino pode ser revisto e ajustado.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. PLANOS (valores de exemplo) -->
+    <section class="secao secao--cinza" id="planos" aria-labelledby="titulo-planos">
+      <div class="caixa">
+        <header class="secao__cab secao__cab--centro">
+          <h2 id="titulo-planos">Escolha seu plano e comece hoje</h2>
+          <p class="secao__intro">Mensalidade, taxas e regras explicadas antes da matrícula.</p>
+        </header>
+
+        <div class="horario" id="horario">
+          <div class="horario__esq">
+            <h3>Em que horário você treina?</h3>
+            <p>Escolha o dia e a hora e veja qual plano cobre o seu horário.</p>
+
+            <div class="horario__js">
+              <div class="horario__dias" role="radiogroup" aria-label="Dia da semana">
+                <button type="button" role="radio" aria-checked="true" data-dia="util">Dias úteis</button>
+                <button type="button" role="radio" aria-checked="false" data-dia="sab" tabindex="-1">Sábado</button>
+                <button type="button" role="radio" aria-checked="false" data-dia="dom" tabindex="-1">Domingo e feriados</button>
+              </div>
+              <div class="horario__hora">
+                <label for="hora">Horário</label>
+                <output id="hora-saida" for="hora">19h</output>
+              </div>
+              <input class="horario__slider" id="hora" type="range" min="0" max="23" step="1" value="19" aria-describedby="horario-resposta">
+              <div class="horario__rapido" aria-label="Horários mais comuns">
+                <button type="button" data-h="7">Manhã</button>
+                <button type="button" data-h="12">Almoço</button>
+                <button type="button" data-h="18">Fim do dia</button>
+                <button type="button" data-h="23">Noite</button>
+                <button type="button" data-h="3">Madrugada</button>
+              </div>
+              <p class="horario__resp" id="horario-resposta" role="status" aria-live="polite"></p>
+              <a class="btn btn--primario btn--compacto horario__ver" href="#plano-livre">Ver o plano</a>
+            </div>
+            <ul class="horario__estatico">
+              <li>Dia: segunda a sexta, das 6h às 16h.</li>
+              <li>Livre: segunda a sexta, das 6h às 22h, e sábado, das 8h às 14h.</li>
+              <li>Forte: 24 horas, todos os dias, inclusive feriados.</li>
+            </ul>
+          </div>
+          <div class="horario__grade" aria-hidden="true"></div>
+        </div>
+
+        <div class="promo">
+          <div class="promo__texto">
+            <strong>Matrícula grátis</strong>
+            <span>para novas matrículas feitas até 31/01/2027.</span>
+          </div>
+          <details class="promo__condicoes">
+            <summary>Ver condições</summary>
+            <p>A taxa de matrícula de R$&nbsp;29,90 não é cobrada em novas matrículas feitas até 31/01/2027. A promoção não se acumula com outras e vale para qualquer um dos três planos.</p>
+          </details>
+        </div>
+
+        <div class="planos">
+          <article class="plano" id="plano-dia">
+            <header class="plano__cab">
+              <h3>Dia</h3>
+              <p class="plano__desc">Para quem treina de manhã ou à tarde.</p>
+            </header>
+            <p class="plano__preco"><span class="plano__moeda">R$</span><span class="plano__valor">79</span><span class="plano__centavos">,90</span><span class="plano__mes">/mês</span></p>
+            <p class="plano__regra">Fidelidade de 12 meses</p>
+            <ul class="plano__resumo">
+              <li>Segunda a sexta, das 6h às 16h</li>
+              <li>Musculação, cardio e alongamento</li>
+            </ul>
+            <details class="plano__detalhes">
+              <summary>O que está incluído</summary>
+              <ul class="inclui">
+                <li class="sim">Musculação e cardio</li>
+                <li class="sim">Área de alongamento e mobilidade</li>
+                <li class="sim">Orientação dos professores no salão</li>
+                <li class="sim">Avaliação inicial e programa inicial</li>
+                <li class="nao">Treino à noite e aos sábados</li>
+                <li class="nao">Acesso 24 horas (exclusivo do plano Forte)</li>
+                <li class="nao">Convidados</li>
+                <li class="nao">Reavaliação trimestral do treino</li>
+              </ul>
+            </details>
+            <a class="btn btn--escuro" href="#visita" data-plano="Dia" data-preco="R$&nbsp;79,90">Escolher plano<span class="sr-only"> Dia</span></a>
+          </article>
+
+          <article class="plano" id="plano-livre">
+            <header class="plano__cab">
+              <h3>Livre</h3>
+              <p class="plano__desc">Para quem quer treinar sem prazo para ficar.</p>
+            </header>
+            <p class="plano__preco"><span class="plano__moeda">R$</span><span class="plano__valor">109</span><span class="plano__centavos">,90</span><span class="plano__mes">/mês</span></p>
+            <p class="plano__regra plano__regra--destaque">Sem fidelidade</p>
+            <ul class="plano__resumo">
+              <li>Segunda a sábado, no horário de funcionamento</li>
+              <li>Cancele quando quiser, conforme as regras</li>
+            </ul>
+            <details class="plano__detalhes">
+              <summary>O que está incluído</summary>
+              <ul class="inclui">
+                <li class="sim">Musculação e cardio</li>
+                <li class="sim">Área de alongamento e mobilidade</li>
+                <li class="sim">Orientação dos professores no salão</li>
+                <li class="sim">Avaliação inicial e programa inicial</li>
+                <li class="sim">Todos os horários de funcionamento</li>
+                <li class="sim">Cancelamento sem fidelidade</li>
+                <li class="nao">Acesso 24 horas (exclusivo do plano Forte)</li>
+                <li class="nao">Convidados</li>
+                <li class="nao">Reavaliação trimestral do treino</li>
+              </ul>
+            </details>
+            <a class="btn btn--escuro" href="#visita" data-plano="Livre" data-preco="R$&nbsp;109,90">Escolher plano<span class="sr-only"> Livre</span></a>
+          </article>
+
+          <article class="plano plano--destaque" id="plano-forte">
+            <span class="plano__selo">Mais vantajoso</span>
+            <header class="plano__cab">
+              <h3>Forte</h3>
+              <p class="plano__desc">Para quem quer o pacote completo e vai treinar com constância.</p>
+            </header>
+            <p class="plano__preco"><span class="plano__moeda">R$</span><span class="plano__valor">129</span><span class="plano__centavos">,90</span><span class="plano__mes">/mês</span></p>
+            <p class="plano__regra">Fidelidade de 12 meses</p>
+            <p class="plano__24h">Aberto 24 horas, todos os dias</p>
+            <ul class="plano__resumo">
+              <li>Acesso 24 horas, inclusive domingos e feriados</li>
+              <li>2 convidados por mês e reavaliação do treino</li>
+            </ul>
+            <details class="plano__detalhes">
+              <summary>O que está incluído</summary>
+              <ul class="inclui">
+                <li class="sim">Musculação e cardio</li>
+                <li class="sim">Área de alongamento e mobilidade</li>
+                <li class="sim">Orientação dos professores no salão</li>
+                <li class="sim">Avaliação inicial e programa inicial</li>
+                <li class="sim">Acesso 24 horas, todos os dias</li>
+                <li class="sim">2 convidados por mês</li>
+                <li class="sim">Reavaliação do treino a cada 3 meses</li>
+                <li class="nao">Cancelamento sem fidelidade</li>
+              </ul>
+            </details>
+            <a class="btn btn--primario" href="#visita" data-plano="Forte" data-preco="R$&nbsp;129,90">Escolher plano<span class="sr-only"> Forte</span></a>
+          </article>
+        </div>
+
+        <p class="planos__nota">Taxa de matrícula: R$&nbsp;29,90, cobrada uma única vez. Antes de matricular, a recepção explica mensalidade, taxas, formas de pagamento, regras de cancelamento e condições de permanência.</p>
+      </div>
+    </section>
+
+    <!-- APP -->
+    <section class="secao secao--escura app" id="app" aria-labelledby="titulo-app">
+      <div class="caixa app__grade">
+        <div class="app__texto">
+          <h2 id="titulo-app">Sua academia no ForteFit App</h2>
+          <p class="secao__intro">Veja o treino do dia, libere a catraca e acompanhe a academia pelo celular. O app é liberado na matrícula.</p>
+
+          <div class="app__abas" role="tablist" aria-label="Telas do aplicativo">
+            <button class="app__aba" type="button" role="tab" id="aba-treino" aria-controls="tela-treino" aria-selected="true">
+              <strong>Treino</strong>
+              <span>O programa do dia, os exercícios e as cargas do último treino.</span>
+            </button>
+            <button class="app__aba" type="button" role="tab" id="aba-acesso" aria-controls="tela-acesso" aria-selected="false" tabindex="-1">
+              <strong>Acesso</strong>
+              <span>Sua carteirinha digital com QR code para liberar a catraca.</span>
+            </button>
+            <button class="app__aba" type="button" role="tab" id="aba-freq" aria-controls="tela-freq" aria-selected="false" tabindex="-1">
+              <strong>Frequência</strong>
+              <span>Quantos dias você treinou na semana e no mês.</span>
+            </button>
+            <button class="app__aba" type="button" role="tab" id="aba-unidade" aria-controls="tela-unidade" aria-selected="false" tabindex="-1">
+              <strong>Unidade</strong>
+              <span>Horários, avisos e o movimento da academia agora.</span>
+            </button>
+          </div>
+
+          <div class="app__lojas">
+            <a class="loja" href="#contato"><img src="img/badge-app-store.svg" width="160" height="53" alt="Baixar na App Store" loading="lazy"></a>
+            <a class="loja loja--play" href="#contato"><img src="img/badge-google-play.png" width="180" height="70" alt="Disponível no Google Play" loading="lazy"></a>
+          </div>
+        </div>
+
+        <div class="app__celular" data-ui>
+          <div class="iphone">
+            <span class="iphone__btn iphone__btn--acao" aria-hidden="true"></span>
+            <span class="iphone__btn iphone__btn--vol1" aria-hidden="true"></span>
+            <span class="iphone__btn iphone__btn--vol2" aria-hidden="true"></span>
+            <span class="iphone__btn iphone__btn--power" aria-hidden="true"></span>
+            <div class="iphone__bisel">
+              <div class="ios">
+                <span class="ios__ilha" aria-hidden="true"><i></i></span>
+                <div class="ios__status" aria-hidden="true">
+                <span class="ios__hora">9:41</span>
+                <span class="ios__icones">
+                  <svg viewBox="0 0 18 12" class="i-sinal"><rect x="0" y="8" width="3" height="4" rx="1"/><rect x="5" y="5.5" width="3" height="6.5" rx="1"/><rect x="10" y="3" width="3" height="9" rx="1"/><rect x="15" y="0" width="3" height="12" rx="1"/></svg>
+                  <svg viewBox="0 0 17 12" class="i-wifi"><path d="M8.5 11.2 6.3 8.9a3.1 3.1 0 0 1 4.4 0L8.5 11.2Z"/><path d="M3.9 6.4a6.5 6.5 0 0 1 9.2 0l-1.4 1.4a4.5 4.5 0 0 0-6.4 0L3.9 6.4Z"/><path d="M1.2 3.7a10.3 10.3 0 0 1 14.6 0l-1.4 1.4a8.3 8.3 0 0 0-11.8 0L1.2 3.7Z"/></svg>
+                  <svg viewBox="0 0 27 13" class="i-bat"><rect x=".5" y=".5" width="22" height="12" rx="3.8" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="19" height="9" rx="2.6" fill="currentColor"/><path d="M24.2 4.5v4c.9-.3 1.6-1.1 1.6-2s-.7-1.7-1.6-2Z" fill="currentColor" opacity=".5"/></svg>
+                </span>
+              </div>
+
+                <!-- Treino -->
+                <div class="tela" id="tela-treino" role="tabpanel" aria-labelledby="aba-treino">
+                  <header class="capa">
+                    <img class="capa__img" src="img/treino-guiado-800.webp" alt="" width="800" height="533" style="object-position:34% 28%">
+                    <div class="capa__txt">
+                      <p class="capa__data">Quinta-feira, 30 de outubro</p>
+                      <h3 class="capa__titulo">Bom dia, Camila</h3>
+                      <p class="capa__chip"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 3.5 4.5 5.2 4.5 9.5A4.5 4.5 0 0 1 12 16a4.5 4.5 0 0 1-4.5-4.5c0-1.7.8-3 1.8-4 .2 1.2.8 2 1.6 2.3C10.6 7.5 11 4.5 12 2Z" fill="currentColor"/><path d="M12 22a6.5 6.5 0 0 1-6.5-6.5c0-1.5.5-2.7 1.3-3.8.2 2.6 2.2 4.3 5.2 4.3s5-1.7 5.2-4.3c.8 1.1 1.3 2.3 1.3 3.8A6.5 6.5 0 0 1 12 22Z" fill="currentColor" opacity=".55"/></svg>6 semanas seguidas</p>
+                    </div>
+                    <span class="tela__avatar capa__avatar" aria-hidden="true">C</span>
+                  </header>
+                  <div class="corpo">
+                    <div class="tela__hero">
+                      <svg class="anel" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="26" fill="none" stroke="rgba(255,255,255,.18)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="#ff5a1f" stroke-width="7" stroke-linecap="round" stroke-dasharray="163.4" stroke-dashoffset="53.9" transform="rotate(-90 32 32)"/><text x="32" y="37" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">67%</text></svg>
+                      <div><p class="tela__chip">Treino A</p><h4>Peito e tríceps</h4><p class="tela__meta">2 de 3 exercícios · 30 min</p></div>
+                      <span class="tela__go" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 6.5v11l9-5.5-9-5.5Z" fill="currentColor"/></svg></span>
+                    </div>
+                    <div class="tela__linha"><p class="tela__secao">Exercícios</p><span class="tela__link">Ver todos</span></div>
+                    <ul class="exs">
+            <li class="ex ok"><span class="ex__foto"><img src="img/pesos-480.webp" alt="" width="52" height="52" loading="lazy" style="object-position:78% 88%"></span><div><strong>Supino reto</strong><small>4 × 10 · 30 kg</small><em class="tag">Peito</em></div><span class="chk"></span></li>
+            <li class="ex ok"><span class="ex__foto"><img src="img/treino-guiado-480.webp" alt="" width="52" height="52" loading="lazy" style="object-position:90% 58%"></span><div><strong>Crucifixo no cabo</strong><small>3 × 12 · 10 kg</small><em class="tag">Peito</em></div><span class="chk"></span></li>
+            <li class="ex prox"><span class="ex__foto"><img src="img/treino-guiado-480.webp" alt="" width="52" height="52" loading="lazy" style="object-position:24% 52%"><span class="ex__play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 7.5v9l7.5-4.5L9 7.5Z" fill="currentColor"/></svg></span></span><div><strong>Tríceps na corda</strong><small>3 × 12 · 20 kg</small><em class="tag">Tríceps</em></div><span class="chk"></span></li>
+            <li class="ex "><span class="ex__foto"><img src="img/alongamento-480.webp" alt="" width="52" height="52" loading="lazy" style="object-position:28% 40%"></span><div><strong>Alongamento orientado</strong><small>5 min</small><em class="tag">Mobilidade</em></div><span class="chk"></span></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Acesso -->
+                <div class="tela" id="tela-acesso" role="tabpanel" aria-labelledby="aba-acesso" hidden>
+                  <header class="capa capa--curta">
+                    <img class="capa__img" src="img/recepcao-pratica-800.webp" alt="" width="800" height="533" style="object-position:58% 40%">
+                    <div class="capa__txt">
+                      <p class="capa__data">Carteirinha digital</p>
+                      <h3 class="capa__titulo">Acesso</h3>
+                    </div>
+                    <span class="tela__avatar capa__avatar" aria-hidden="true">C</span>
+                  </header>
+                  <div class="corpo">
+                    <div class="carteira">
+                      <div class="carteira__topo"><span class="tela__chip">Plano Forte</span><span class="carteira__status"><i></i>Ativo</span></div>
+                      <div class="carteira__qr"><svg class="qr" viewBox="0 0 25 25" aria-hidden="true" focusable="false" shape-rendering="crispEdges"><g fill="#151515"><rect x="0" y="0" width="1.02" height="1.02"/><rect x="0" y="1" width="1.02" height="1.02"/><rect x="0" y="2" width="1.02" height="1.02"/><rect x="0" y="3" width="1.02" height="1.02"/><rect x="0" y="4" width="1.02" height="1.02"/><rect x="0" y="5" width="1.02" height="1.02"/><rect x="0" y="6" width="1.02" height="1.02"/><rect x="0" y="10" width="1.02" height="1.02"/><rect x="0" y="11" width="1.02" height="1.02"/><rect x="0" y="13" width="1.02" height="1.02"/><rect x="0" y="18" width="1.02" height="1.02"/><rect x="0" y="19" width="1.02" height="1.02"/><rect x="0" y="20" width="1.02" height="1.02"/><rect x="0" y="21" width="1.02" height="1.02"/><rect x="0" y="22" width="1.02" height="1.02"/><rect x="0" y="23" width="1.02" height="1.02"/><rect x="0" y="24" width="1.02" height="1.02"/><rect x="1" y="0" width="1.02" height="1.02"/><rect x="1" y="6" width="1.02" height="1.02"/><rect x="1" y="11" width="1.02" height="1.02"/><rect x="1" y="15" width="1.02" height="1.02"/><rect x="1" y="18" width="1.02" height="1.02"/><rect x="1" y="24" width="1.02" height="1.02"/><rect x="2" y="0" width="1.02" height="1.02"/><rect x="2" y="2" width="1.02" height="1.02"/><rect x="2" y="3" width="1.02" height="1.02"/><rect x="2" y="4" width="1.02" height="1.02"/><rect x="2" y="6" width="1.02" height="1.02"/><rect x="2" y="9" width="1.02" height="1.02"/><rect x="2" y="10" width="1.02" height="1.02"/><rect x="2" y="11" width="1.02" height="1.02"/><rect x="2" y="14" width="1.02" height="1.02"/><rect x="2" y="18" width="1.02" height="1.02"/><rect x="2" y="20" width="1.02" height="1.02"/><rect x="2" y="21" width="1.02" height="1.02"/><rect x="2" y="22" width="1.02" height="1.02"/><rect x="2" y="24" width="1.02" height="1.02"/><rect x="3" y="0" width="1.02" height="1.02"/><rect x="3" y="2" width="1.02" height="1.02"/><rect x="3" y="3" width="1.02" height="1.02"/><rect x="3" y="4" width="1.02" height="1.02"/><rect x="3" y="6" width="1.02" height="1.02"/><rect x="3" y="8" width="1.02" height="1.02"/><rect x="3" y="9" width="1.02" height="1.02"/><rect x="3" y="10" width="1.02" height="1.02"/><rect x="3" y="13" width="1.02" height="1.02"/><rect x="3" y="16" width="1.02" height="1.02"/><rect x="3" y="18" width="1.02" height="1.02"/><rect x="3" y="20" width="1.02" height="1.02"/><rect x="3" y="21" width="1.02" height="1.02"/><rect x="3" y="22" width="1.02" height="1.02"/><rect x="3" y="24" width="1.02" height="1.02"/><rect x="4" y="0" width="1.02" height="1.02"/><rect x="4" y="2" width="1.02" height="1.02"/><rect x="4" y="3" width="1.02" height="1.02"/><rect x="4" y="4" width="1.02" height="1.02"/><rect x="4" y="6" width="1.02" height="1.02"/><rect x="4" y="8" width="1.02" height="1.02"/><rect x="4" y="9" width="1.02" height="1.02"/><rect x="4" y="10" width="1.02" height="1.02"/><rect x="4" y="11" width="1.02" height="1.02"/><rect x="4" y="12" width="1.02" height="1.02"/><rect x="4" y="14" width="1.02" height="1.02"/><rect x="4" y="18" width="1.02" height="1.02"/><rect x="4" y="20" width="1.02" height="1.02"/><rect x="4" y="21" width="1.02" height="1.02"/><rect x="4" y="22" width="1.02" height="1.02"/><rect x="4" y="24" width="1.02" height="1.02"/><rect x="5" y="0" width="1.02" height="1.02"/><rect x="5" y="6" width="1.02" height="1.02"/><rect x="5" y="9" width="1.02" height="1.02"/><rect x="5" y="10" width="1.02" height="1.02"/><rect x="5" y="11" width="1.02" height="1.02"/><rect x="5" y="14" width="1.02" height="1.02"/><rect x="5" y="18" width="1.02" height="1.02"/><rect x="5" y="24" width="1.02" height="1.02"/><rect x="6" y="0" width="1.02" height="1.02"/><rect x="6" y="1" width="1.02" height="1.02"/><rect x="6" y="2" width="1.02" height="1.02"/><rect x="6" y="3" width="1.02" height="1.02"/><rect x="6" y="4" width="1.02" height="1.02"/><rect x="6" y="5" width="1.02" height="1.02"/><rect x="6" y="6" width="1.02" height="1.02"/><rect x="6" y="8" width="1.02" height="1.02"/><rect x="6" y="10" width="1.02" height="1.02"/><rect x="6" y="12" width="1.02" height="1.02"/><rect x="6" y="15" width="1.02" height="1.02"/><rect x="6" y="18" width="1.02" height="1.02"/><rect x="6" y="19" width="1.02" height="1.02"/><rect x="6" y="20" width="1.02" height="1.02"/><rect x="6" y="21" width="1.02" height="1.02"/><rect x="6" y="22" width="1.02" height="1.02"/><rect x="6" y="23" width="1.02" height="1.02"/><rect x="6" y="24" width="1.02" height="1.02"/><rect x="7" y="8" width="1.02" height="1.02"/><rect x="7" y="10" width="1.02" height="1.02"/><rect x="7" y="12" width="1.02" height="1.02"/><rect x="7" y="15" width="1.02" height="1.02"/><rect x="8" y="0" width="1.02" height="1.02"/><rect x="8" y="1" width="1.02" height="1.02"/><rect x="8" y="6" width="1.02" height="1.02"/><rect x="8" y="8" width="1.02" height="1.02"/><rect x="8" y="9" width="1.02" height="1.02"/><rect x="8" y="10" width="1.02" height="1.02"/><rect x="8" y="11" width="1.02" height="1.02"/><rect x="8" y="12" width="1.02" height="1.02"/><rect x="8" y="13" width="1.02" height="1.02"/><rect x="8" y="15" width="1.02" height="1.02"/><rect x="8" y="16" width="1.02" height="1.02"/><rect x="8" y="19" width="1.02" height="1.02"/><rect x="8" y="20" width="1.02" height="1.02"/><rect x="8" y="21" width="1.02" height="1.02"/><rect x="8" y="23" width="1.02" height="1.02"/><rect x="9" y="0" width="1.02" height="1.02"/><rect x="9" y="1" width="1.02" height="1.02"/><rect x="9" y="2" width="1.02" height="1.02"/><rect x="9" y="3" width="1.02" height="1.02"/><rect x="9" y="4" width="1.02" height="1.02"/><rect x="9" y="8" width="1.02" height="1.02"/><rect x="9" y="9" width="1.02" height="1.02"/><rect x="9" y="10" width="1.02" height="1.02"/><rect x="9" y="12" width="1.02" height="1.02"/><rect x="9" y="13" width="1.02" height="1.02"/><rect x="9" y="15" width="1.02" height="1.02"/><rect x="9" y="18" width="1.02" height="1.02"/><rect x="9" y="19" width="1.02" height="1.02"/><rect x="9" y="21" width="1.02" height="1.02"/><rect x="9" y="22" width="1.02" height="1.02"/><rect x="9" y="23" width="1.02" height="1.02"/><rect x="10" y="1" width="1.02" height="1.02"/><rect x="10" y="4" width="1.02" height="1.02"/><rect x="10" y="6" width="1.02" height="1.02"/><rect x="10" y="7" width="1.02" height="1.02"/><rect x="10" y="8" width="1.02" height="1.02"/><rect x="10" y="9" width="1.02" height="1.02"/><rect x="10" y="10" width="1.02" height="1.02"/><rect x="10" y="11" width="1.02" height="1.02"/><rect x="10" y="12" width="1.02" height="1.02"/><rect x="10" y="14" width="1.02" height="1.02"/><rect x="10" y="16" width="1.02" height="1.02"/><rect x="10" y="18" width="1.02" height="1.02"/><rect x="10" y="21" width="1.02" height="1.02"/><rect x="10" y="24" width="1.02" height="1.02"/><rect x="11" y="0" width="1.02" height="1.02"/><rect x="11" y="1" width="1.02" height="1.02"/><rect x="11" y="2" width="1.02" height="1.02"/><rect x="11" y="9" width="1.02" height="1.02"/><rect x="11" y="10" width="1.02" height="1.02"/><rect x="11" y="13" width="1.02" height="1.02"/><rect x="11" y="15" width="1.02" height="1.02"/><rect x="11" y="17" width="1.02" height="1.02"/><rect x="11" y="18" width="1.02" height="1.02"/><rect x="11" y="19" width="1.02" height="1.02"/><rect x="11" y="21" width="1.02" height="1.02"/><rect x="11" y="22" width="1.02" height="1.02"/><rect x="11" y="23" width="1.02" height="1.02"/><rect x="12" y="3" width="1.02" height="1.02"/><rect x="12" y="4" width="1.02" height="1.02"/><rect x="12" y="5" width="1.02" height="1.02"/><rect x="12" y="8" width="1.02" height="1.02"/><rect x="12" y="10" width="1.02" height="1.02"/><rect x="12" y="15" width="1.02" height="1.02"/><rect x="12" y="19" width="1.02" height="1.02"/><rect x="12" y="20" width="1.02" height="1.02"/><rect x="12" y="21" width="1.02" height="1.02"/><rect x="12" y="23" width="1.02" height="1.02"/><rect x="12" y="24" width="1.02" height="1.02"/><rect x="13" y="0" width="1.02" height="1.02"/><rect x="13" y="1" width="1.02" height="1.02"/><rect x="13" y="2" width="1.02" height="1.02"/><rect x="13" y="4" width="1.02" height="1.02"/><rect x="13" y="7" width="1.02" height="1.02"/><rect x="13" y="8" width="1.02" height="1.02"/><rect x="13" y="12" width="1.02" height="1.02"/><rect x="13" y="14" width="1.02" height="1.02"/><rect x="13" y="18" width="1.02" height="1.02"/><rect x="13" y="19" width="1.02" height="1.02"/><rect x="13" y="23" width="1.02" height="1.02"/><rect x="13" y="24" width="1.02" height="1.02"/><rect x="14" y="0" width="1.02" height="1.02"/><rect x="14" y="1" width="1.02" height="1.02"/><rect x="14" y="2" width="1.02" height="1.02"/><rect x="14" y="3" width="1.02" height="1.02"/><rect x="14" y="5" width="1.02" height="1.02"/><rect x="14" y="8" width="1.02" height="1.02"/><rect x="14" y="13" width="1.02" height="1.02"/><rect x="14" y="14" width="1.02" height="1.02"/><rect x="14" y="17" width="1.02" height="1.02"/><rect x="14" y="20" width="1.02" height="1.02"/><rect x="14" y="21" width="1.02" height="1.02"/><rect x="14" y="22" width="1.02" height="1.02"/><rect x="14" y="24" width="1.02" height="1.02"/><rect x="15" y="2" width="1.02" height="1.02"/><rect x="15" y="3" width="1.02" height="1.02"/><rect x="15" y="5" width="1.02" height="1.02"/><rect x="15" y="6" width="1.02" height="1.02"/><rect x="15" y="7" width="1.02" height="1.02"/><rect x="15" y="10" width="1.02" height="1.02"/><rect x="15" y="11" width="1.02" height="1.02"/><rect x="15" y="13" width="1.02" height="1.02"/><rect x="15" y="14" width="1.02" height="1.02"/><rect x="15" y="15" width="1.02" height="1.02"/><rect x="15" y="16" width="1.02" height="1.02"/><rect x="15" y="18" width="1.02" height="1.02"/><rect x="15" y="24" width="1.02" height="1.02"/><rect x="16" y="0" width="1.02" height="1.02"/><rect x="16" y="2" width="1.02" height="1.02"/><rect x="16" y="3" width="1.02" height="1.02"/><rect x="16" y="4" width="1.02" height="1.02"/><rect x="16" y="8" width="1.02" height="1.02"/><rect x="16" y="10" width="1.02" height="1.02"/><rect x="16" y="11" width="1.02" height="1.02"/><rect x="16" y="14" width="1.02" height="1.02"/><rect x="16" y="18" width="1.02" height="1.02"/><rect x="16" y="19" width="1.02" height="1.02"/><rect x="16" y="20" width="1.02" height="1.02"/><rect x="16" y="21" width="1.02" height="1.02"/><rect x="16" y="24" width="1.02" height="1.02"/><rect x="17" y="8" width="1.02" height="1.02"/><rect x="17" y="10" width="1.02" height="1.02"/><rect x="17" y="11" width="1.02" height="1.02"/><rect x="17" y="12" width="1.02" height="1.02"/><rect x="17" y="17" width="1.02" height="1.02"/><rect x="17" y="18" width="1.02" height="1.02"/><rect x="17" y="19" width="1.02" height="1.02"/><rect x="17" y="20" width="1.02" height="1.02"/><rect x="17" y="21" width="1.02" height="1.02"/><rect x="17" y="23" width="1.02" height="1.02"/><rect x="18" y="0" width="1.02" height="1.02"/><rect x="18" y="1" width="1.02" height="1.02"/><rect x="18" y="2" width="1.02" height="1.02"/><rect x="18" y="3" width="1.02" height="1.02"/><rect x="18" y="4" width="1.02" height="1.02"/><rect x="18" y="5" width="1.02" height="1.02"/><rect x="18" y="6" width="1.02" height="1.02"/><rect x="18" y="9" width="1.02" height="1.02"/><rect x="18" y="10" width="1.02" height="1.02"/><rect x="18" y="12" width="1.02" height="1.02"/><rect x="18" y="13" width="1.02" height="1.02"/><rect x="18" y="14" width="1.02" height="1.02"/><rect x="18" y="21" width="1.02" height="1.02"/><rect x="18" y="22" width="1.02" height="1.02"/><rect x="18" y="23" width="1.02" height="1.02"/><rect x="18" y="24" width="1.02" height="1.02"/><rect x="19" y="0" width="1.02" height="1.02"/><rect x="19" y="6" width="1.02" height="1.02"/><rect x="19" y="10" width="1.02" height="1.02"/><rect x="19" y="12" width="1.02" height="1.02"/><rect x="19" y="13" width="1.02" height="1.02"/><rect x="19" y="14" width="1.02" height="1.02"/><rect x="19" y="15" width="1.02" height="1.02"/><rect x="19" y="16" width="1.02" height="1.02"/><rect x="19" y="17" width="1.02" height="1.02"/><rect x="19" y="21" width="1.02" height="1.02"/><rect x="19" y="23" width="1.02" height="1.02"/><rect x="20" y="0" width="1.02" height="1.02"/><rect x="20" y="2" width="1.02" height="1.02"/><rect x="20" y="3" width="1.02" height="1.02"/><rect x="20" y="4" width="1.02" height="1.02"/><rect x="20" y="6" width="1.02" height="1.02"/><rect x="20" y="12" width="1.02" height="1.02"/><rect x="20" y="13" width="1.02" height="1.02"/><rect x="20" y="14" width="1.02" height="1.02"/><rect x="20" y="16" width="1.02" height="1.02"/><rect x="20" y="18" width="1.02" height="1.02"/><rect x="20" y="20" width="1.02" height="1.02"/><rect x="20" y="21" width="1.02" height="1.02"/><rect x="20" y="23" width="1.02" height="1.02"/><rect x="20" y="24" width="1.02" height="1.02"/><rect x="21" y="0" width="1.02" height="1.02"/><rect x="21" y="2" width="1.02" height="1.02"/><rect x="21" y="3" width="1.02" height="1.02"/><rect x="21" y="4" width="1.02" height="1.02"/><rect x="21" y="6" width="1.02" height="1.02"/><rect x="21" y="11" width="1.02" height="1.02"/><rect x="21" y="12" width="1.02" height="1.02"/><rect x="21" y="15" width="1.02" height="1.02"/><rect x="21" y="16" width="1.02" height="1.02"/><rect x="21" y="19" width="1.02" height="1.02"/><rect x="21" y="20" width="1.02" height="1.02"/><rect x="21" y="23" width="1.02" height="1.02"/><rect x="21" y="24" width="1.02" height="1.02"/><rect x="22" y="0" width="1.02" height="1.02"/><rect x="22" y="2" width="1.02" height="1.02"/><rect x="22" y="3" width="1.02" height="1.02"/><rect x="22" y="4" width="1.02" height="1.02"/><rect x="22" y="6" width="1.02" height="1.02"/><rect x="22" y="8" width="1.02" height="1.02"/><rect x="22" y="10" width="1.02" height="1.02"/><rect x="22" y="11" width="1.02" height="1.02"/><rect x="22" y="14" width="1.02" height="1.02"/><rect x="22" y="15" width="1.02" height="1.02"/><rect x="22" y="16" width="1.02" height="1.02"/><rect x="22" y="19" width="1.02" height="1.02"/><rect x="22" y="22" width="1.02" height="1.02"/><rect x="22" y="23" width="1.02" height="1.02"/><rect x="22" y="24" width="1.02" height="1.02"/><rect x="23" y="0" width="1.02" height="1.02"/><rect x="23" y="6" width="1.02" height="1.02"/><rect x="23" y="8" width="1.02" height="1.02"/><rect x="23" y="9" width="1.02" height="1.02"/><rect x="23" y="13" width="1.02" height="1.02"/><rect x="23" y="14" width="1.02" height="1.02"/><rect x="23" y="16" width="1.02" height="1.02"/><rect x="23" y="17" width="1.02" height="1.02"/><rect x="23" y="20" width="1.02" height="1.02"/><rect x="23" y="21" width="1.02" height="1.02"/><rect x="23" y="22" width="1.02" height="1.02"/><rect x="23" y="23" width="1.02" height="1.02"/><rect x="23" y="24" width="1.02" height="1.02"/><rect x="24" y="0" width="1.02" height="1.02"/><rect x="24" y="1" width="1.02" height="1.02"/><rect x="24" y="2" width="1.02" height="1.02"/><rect x="24" y="3" width="1.02" height="1.02"/><rect x="24" y="4" width="1.02" height="1.02"/><rect x="24" y="5" width="1.02" height="1.02"/><rect x="24" y="6" width="1.02" height="1.02"/><rect x="24" y="8" width="1.02" height="1.02"/><rect x="24" y="9" width="1.02" height="1.02"/><rect x="24" y="10" width="1.02" height="1.02"/><rect x="24" y="16" width="1.02" height="1.02"/><rect x="24" y="17" width="1.02" height="1.02"/><rect x="24" y="18" width="1.02" height="1.02"/><rect x="24" y="19" width="1.02" height="1.02"/><rect x="24" y="20" width="1.02" height="1.02"/><rect x="24" y="21" width="1.02" height="1.02"/><rect x="24" y="22" width="1.02" height="1.02"/><rect x="24" y="24" width="1.02" height="1.02"/></g></svg></div>
+                      <p class="carteira__nome">Camila Ribeiro</p>
+                      <p class="carteira__dados">Matrícula 000482 · válida até 31/12/2026</p>
+                    </div>
+                    <p class="tela__dica">Aproxime o QR code do leitor da catraca.</p>
+                    <ul class="exs exs--simples">
+                      <li class="ex"><span class="ex__icone ex__icone--verde"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 13.5h5.5L10 22l9-12.5h-5.7L13 2Z" fill="currentColor"/></svg></span><div><strong>Acesso 24 horas liberado</strong><small>Todos os dias, inclusive feriados</small></div></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Frequência -->
+                <div class="tela" id="tela-freq" role="tabpanel" aria-labelledby="aba-freq" hidden>
+                  <header class="capa capa--curta">
+                    <img class="capa__img" src="img/cardio-800.webp" alt="" width="800" height="533" style="object-position:50% 55%">
+                    <div class="capa__txt">
+                      <p class="capa__data">Outubro</p>
+                      <h3 class="capa__titulo">Frequência</h3>
+                    </div>
+                    <span class="tela__avatar capa__avatar" aria-hidden="true">C</span>
+                  </header>
+                  <div class="corpo">
+                    <div class="tela__card tela__card--sobe">
+                      <p class="tela__meta">Esta semana</p>
+                      <p class="tela__grande">4 <small>treinos</small></p>
+                      <div class="tela__dias" role="img" aria-label="Treinos na semana: segunda, quarta, sexta e sábado">
+                        <span class="on"><i style="height:62%"></i><b>S</b></span>
+                        <span><i style="height:12%"></i><b>T</b></span>
+                        <span class="on"><i style="height:78%"></i><b>Q</b></span>
+                        <span><i style="height:12%"></i><b>Q</b></span>
+                        <span class="on"><i style="height:70%"></i><b>S</b></span>
+                        <span class="on"><i style="height:48%"></i><b>S</b></span>
+                        <span><i style="height:12%"></i><b>D</b></span>
+                      </div>
+                    </div>
+                    <div class="tela__linha"><p class="tela__secao">Conquistas</p></div>
+                    <div class="conquistas">
+                      <div class="conq"><span class="conq__ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 3.5 4.5 5.2 4.5 9.5A4.5 4.5 0 0 1 12 16a4.5 4.5 0 0 1-4.5-4.5c0-1.7.8-3 1.8-4 .2 1.2.8 2 1.6 2.3C10.6 7.5 11 4.5 12 2Z" fill="currentColor"/><path d="M12 22a6.5 6.5 0 0 1-6.5-6.5c0-1.5.5-2.7 1.3-3.8.2 2.6 2.2 4.3 5.2 4.3s5-1.7 5.2-4.3c.8 1.1 1.3 2.3 1.3 3.8A6.5 6.5 0 0 1 12 22Z" fill="currentColor" opacity=".55"/></svg></span><strong>6</strong><small>semanas seguidas</small></div>
+                      <div class="conq"><span class="conq__ico conq__ico--b"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8.5 13.5 7 21l5-2.7 5 2.7-1.5-7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/></svg></span><strong>16</strong><small>treinos no mês</small></div>
+                      <div class="conq"><span class="conq__ico conq__ico--c"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 5 13.5h5.5L10 22l9-12.5h-5.7L13 2Z" fill="currentColor"/></svg></span><strong>4/4</strong><small>meta da semana</small></div>
+                    </div>
+                    <div class="tela__linha"><p class="tela__secao">Últimos treinos</p></div>
+                    <ul class="exs exs--simples">
+                      <li class="ex"><span class="ex__foto ex__foto--p"><img src="img/pesos-480.webp" alt="" width="46" height="46" loading="lazy" style="object-position:30% 70%"></span><div><strong>Treino C · Pernas</strong><small>Ontem · 48 min</small></div></li>
+                      <li class="ex"><span class="ex__foto ex__foto--p"><img src="img/treino-guiado-480.webp" alt="" width="46" height="46" loading="lazy" style="object-position:60% 50%"></span><div><strong>Treino B · Costas e bíceps</strong><small>Quarta · 52 min</small></div></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- Unidade -->
+                <div class="tela" id="tela-unidade" role="tabpanel" aria-labelledby="aba-unidade" hidden>
+                  <header class="capa">
+                    <img class="capa__img" src="img/fachada-800.webp" alt="" width="800" height="533" style="object-position:50% 45%">
+                    <div class="capa__txt">
+                      <p class="capa__data"><span class="ponto"></span>Aberta agora · até 22h</p>
+                      <h3 class="capa__titulo">ForteFit Centro</h3>
+                      <p class="capa__chip capa__chip--claro"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" fill="currentColor"/><circle cx="12" cy="9.5" r="2.4" fill="#151515"/></svg>Rua da Superação, 100</p>
+                    </div>
+                    <span class="tela__avatar capa__avatar" aria-hidden="true">C</span>
+                  </header>
+                  <div class="corpo">
+                    <div class="tela__card tela__card--sobe">
+                      <p class="tela__secao">Movimento agora</p>
+                      <div class="tela__mov" role="img" aria-label="Movimento moderado"><span class="on"></span><span class="on"></span><span class="on"></span><span></span><span></span></div>
+                      <p class="tela__meta">Moderado. Melhores horários hoje: 10h às 11h e 14h às 16h.</p>
+                    </div>
+                    <div class="tela__card">
+                      <p class="tela__secao">Horários</p>
+                      <dl class="tela__horas"><div><dt>Segunda a sexta</dt><dd>6h às 22h</dd></div><div><dt>Sábado</dt><dd>8h às 14h</dd></div><div><dt>Plano Forte</dt><dd>24 horas</dd></div></dl>
+                    </div>
+                    <div class="tela__linha"><p class="tela__secao">Avisos da unidade</p></div>
+                    <ul class="exs exs--simples">
+                      <li class="ex"><span class="ex__icone ex__icone--amarelo">!</span><div><strong>Esteira 3 em manutenção</strong><small>Volta às 14h</small></div></li>
+                      <li class="ex"><span class="ex__icone ex__icone--amarelo">!</span><div><strong>Alongamento orientado</strong><small>Hoje, às 18h30</small></div></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <nav class="ios__tabs" aria-hidden="true">
+                  <span class="on"><svg viewBox="0 0 24 24"><path d="M3 10v4M6.5 7v10M17.5 7v10M21 10v4M6.5 12h11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Treino</span>
+                  <span><svg viewBox="0 0 24 24"><path d="M4 9V5a1 1 0 0 1 1-1h4M15 4h4a1 1 0 0 1 1 1v4M20 15v4a1 1 0 0 1-1 1h-4M9 20H5a1 1 0 0 1-1-1v-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M8 8h3v3H8zM13 8h3v3h-3zM8 13h3v3H8zM13 13h1.5v1.5H13zM15 15h1v1h-1z" fill="currentColor"/></svg>Acesso</span>
+                  <span><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Frequência</span>
+                  <span><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" fill="currentColor"/></svg>Unidade</span>
+                </nav>
+                <span class="ios__home" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. CONHEÇA POR DENTRO -->
+    <section class="secao" id="conheca" aria-labelledby="titulo-conheca">
+      <div class="caixa">
+        <header class="secao__cab">
+          <h2 id="titulo-conheca">Venha ver a ForteFit de perto</h2>
+        </header>
+
+        <div class="mosaico">
+          <figure class="mosaico__item mosaico__item--a">
+            [[img fachada | Fachada da ForteFit ao anoitecer, com o letreiro iluminado e o salão visível através dos vidros | (min-width: 960px) 600px, 92vw | | lazy | 50% 50%]]
+            <figcaption>Fachada</figcaption>
+          </figure>
+          <figure class="mosaico__item mosaico__item--b">
+            [[img piso | Piso de força da ForteFit com halteres, anilhas e equipamentos de treino livre | (min-width: 960px) 480px, 92vw | | lazy | 50% 50%]]
+            <figcaption>Piso de força</figcaption>
+          </figure>
+          <figure class="mosaico__item mosaico__item--c">
+            [[img cardio | Área de cardio da ForteFit com esteiras alinhadas diante de janelas amplas | (min-width: 960px) 300px, 92vw | | lazy | 50% 50%]]
+            <figcaption>Cardio</figcaption>
+          </figure>
+          <figure class="mosaico__item mosaico__item--d">
+            [[img recepcao-pratica | Recepção da ForteFit com balcão grafite, letreiro na parede e catraca de acesso | (min-width: 960px) 300px, 92vw | | lazy | 55% 50%]]
+            <figcaption>Recepção</figcaption>
+          </figure>
+        </div>
+
+        <div class="visita" id="visita">
+          <div class="visita__texto">
+            <h3>Agende uma visita</h3>
+            <p class="visita__plano" id="visita-plano" role="status" hidden></p>
+            <p>Veja a estrutura, conheça a equipe e tire as suas dúvidas. Quando houver possibilidade de treino experimental, a recepção confirma as condições e a disponibilidade antes.</p>
+          </div>
+          <a class="btn btn--primario" href="{{cta_href}}" data-cta>Agendar uma visita</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. COMO COMEÇAR -->
+    <section class="secao secao--cinza" id="como-comecar" aria-labelledby="titulo-comecar">
+      <div class="caixa">
+        <header class="secao__cab">
+          <h2 id="titulo-comecar">Do primeiro contato ao primeiro treino</h2>
+          <p class="secao__intro">Você sabe o que vem em cada etapa antes de dar o próximo passo.</p>
+        </header>
+
+        <ol class="passos">
+          <li class="passo">
+            <h3>Primeiro contato</h3>
+            <p>Pelo WhatsApp ou presencialmente. A recepção explica os planos, os horários, o funcionamento e o que está incluído.</p>
+          </li>
+          <li class="passo">
+            <h3>Visita à unidade</h3>
+            <p>Agende uma visita para ver a estrutura e conversar com a equipe. Quando houver possibilidade de treino experimental, a recepção confirma as condições e a disponibilidade antes.</p>
+          </li>
+          <li class="passo">
+            <h3>Matrícula</h3>
+            <p>Recolhemos os dados necessários e apresentamos as regras de uso da academia.</p>
+          </li>
+          <li class="passo">
+            <h3>Orientações iniciais</h3>
+            <p>Antes dos exercícios, o aluno recebe orientações e passa pelo levantamento de objetivos, experiência e eventuais limitações relevantes para o treino.</p>
+          </li>
+          <li class="passo">
+            <h3>Programa inicial</h3>
+            <p>O profissional responsável organiza o programa e apresenta os aparelhos.</p>
+          </li>
+          <li class="passo">
+            <h3>Evolução</h3>
+            <p>Conforme você se adapta e evolui, o treino pode ser revisto.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 2. PARA QUEM É -->
+    <section class="secao" id="publico" aria-labelledby="titulo-publico">
+      <div class="caixa duas-colunas">
+        <div class="duas-colunas__texto">
+          <h2 id="titulo-publico">Para quem começa ou já treina</h2>
+          <p>Cuidar da saúde, ganhar força, melhorar o condicionamento ou voltar a se movimentar. Cada pessoa chega com um objetivo.</p>
+          <p>Tem gente que só treina antes ou depois do trabalho. Tem gente que não conhece os aparelhos, ou acha que precisa estar em forma para começar. Não precisa.</p>
+          <p>Aqui ninguém é julgado por aparência, idade ou desempenho.</p>
+        </div>
+        <ul class="perfis">
+          <li class="perfil">
+            <h3>Nunca frequentou uma academia</h3>
+            <p>Você conhece os aparelhos com a ajuda de um professor e começa com um programa pensado para o seu momento.</p>
+          </li>
+          <li class="perfil">
+            <h3>Está voltando depois de um tempo</h3>
+            <p>Retome a rotina com orientação, respeitando a sua condição atual e as suas limitações.</p>
+          </li>
+          <li class="perfil">
+            <h3>Já treina com regularidade</h3>
+            <p>Tenha estrutura para treinar e a possibilidade de rever o treino conforme você evolui.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. ESTRUTURA, ROTINA E EQUIPE -->
+    <section class="secao secao--cinza" id="equipe" aria-labelledby="titulo-equipe">
+      <div class="caixa">
+        <div class="duas-colunas duas-colunas--topo">
+          <div class="duas-colunas__texto">
+            <h2 id="titulo-equipe">Unidade organizada, horários amplos</h2>
+            <p>A ForteFit funciona em uma unidade física com recepção, controle de acesso, salão de musculação, área de cardio, espaço para alongamento e sanitários.</p>
+            <p>Mantemos os equipamentos organizados, os corredores livres e os ambientes limpos. A manutenção dos aparelhos e a reposição dos acessórios fazem parte da rotina.</p>
+            <p>Os horários foram pensados para quem estuda, trabalha ou tem compromissos familiares. <strong>Quem é do plano Forte treina 24 horas por dia, todos os dias.</strong></p>
+          </div>
+          <figure class="foto">
+            [[img equipe | Equipe da ForteFit uniformizada sorrindo diante do balcão da recepção | (min-width: 960px) 560px, 92vw | | lazy | 50% 40%]]
+          </figure>
+        </div>
+
+        <h3 class="equipe__titulo">Quem cuida da sua rotina</h3>
+        <ul class="funcoes-grid">
+          <li><strong>Recepção</strong><span>Primeiro atendimento, apresentação dos planos, matrículas e dúvidas administrativas.</span></li>
+          <li><strong>Educação Física</strong><span>Orientação dos exercícios e acompanhamento no salão, dentro das suas atribuições.</span></li>
+          <li><strong>Gestão</strong><span>Funcionamento da unidade, manutenção, atendimento e condições comerciais.</span></li>
+          <li><strong>Limpeza</strong><span>Conservação dos ambientes ao longo da rotina.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. POSTURA -->
+    <section class="postura" aria-label="Nosso compromisso">
+      <div class="caixa">
+        <blockquote>
+          <p>Não prometemos transformação em poucos dias nem resultado garantido. A evolução de cada pessoa depende de vários fatores.</p>
+          <p class="postura__fecho">Nosso compromisso é oferecer condições para você treinar com orientação e constância.</p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- 8. DÚVIDAS E CONTATO -->
+    <section class="secao" id="contato" aria-labelledby="titulo-contato">
+      <div class="caixa">
+        <h2 id="titulo-contato" class="contato__titulo">Dúvidas e contato</h2>
+
+        <div class="contato__grade">
+          <div class="faq">
+            <h3 class="faq__titulo">Perguntas frequentes</h3>
+            <details class="faq__item" name="faq">
+              <summary>Nunca treinei. Posso começar?</summary>
+              <p>Pode. Atendemos quem nunca frequentou uma academia. Os professores apresentam os aparelhos, explicam os exercícios e você começa com um programa inicial organizado a partir dos seus objetivos e limitações.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Os professores acompanham o meu treino?</summary>
+              <p>Sim. Eles orientam e acompanham os alunos no salão: explicam os exercícios, corrigem a execução e esclarecem dúvidas. É um atendimento diferente do personal trainer exclusivo.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Posso conhecer a academia antes de me matricular?</summary>
+              <p>Pode. Agende uma visita para ver a estrutura e conversar com a equipe. Quando houver possibilidade de treino experimental, a recepção confirma as condições e a disponibilidade antes.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Quais atividades vocês oferecem?</summary>
+              <p>Musculação, com aparelhos de resistência, estações de cabos, bancos, halteres e pesos livres; área de cardio com esteiras e bicicletas; e espaço de alongamento e mobilidade.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Preciso assumir fidelidade?</summary>
+              <p>Depende do plano. O plano Livre não tem fidelidade; os planos Dia e Forte têm fidelidade de 12 meses. A recepção explica as regras de cancelamento e permanência antes da matrícula.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>Tem taxa de matrícula?</summary>
+              <p>A taxa é de R$&nbsp;29,90, cobrada uma única vez. Em novas matrículas feitas até 31/01/2027, ela não é cobrada.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>A academia abre 24 horas?</summary>
+              <p>O acesso 24 horas, todos os dias, é exclusivo do plano Forte. Nos planos Dia e Livre, vale o horário de funcionamento de cada plano.</p>
+            </details>
+            <details class="faq__item" name="faq">
+              <summary>A academia garante resultado?</summary>
+              <p>Não. Cada pessoa chega com uma realidade e a evolução depende de vários fatores. Nosso papel é dar estrutura e orientação para você treinar com constância.</p>
+            </details>
+          </div>
+
+          <aside class="chamada" aria-labelledby="titulo-chamada">
+            <h3 id="titulo-chamada">Vamos conversar?</h3>
+            <p>Tire dúvidas e agende uma visita com a recepção.</p>
+
+            {{#if whatsapp_href}}
+            <a class="btn btn--primario" href="{{whatsapp_href}}" data-cta rel="noopener" target="_blank">Falar pelo WhatsApp<span class="sr-only"> (abre em nova aba)</span></a>
+            {{/if}}
+
+            <dl class="dados">
+              <div>
+                <dt>Endereço</dt>
+                <dd>{{endereco}}</dd>
+              </div>
+              <div>
+                <dt>Horários</dt>
+                <dd>{{horarios}}{{#if horariosFeriados}}<br><span class="dados__nota">{{horariosFeriados}}</span>{{/if}}</dd>
+              </div>
+              <div>
+                <dt>Telefone</dt>
+                <dd>{{telefone}}</dd>
+              </div>
+              {{#if whatsapp}}
+              <div>
+                <dt>WhatsApp da recepção</dt>
+                <dd>{{#if whatsapp_href}}<a href="{{whatsapp_href}}" rel="noopener" target="_blank">{{whatsapp_exibir}}</a>{{else}}{{whatsapp_exibir}}{{/if}}</dd>
+              </div>
+              {{/if}}
+            </dl>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="caixa">
+      <div class="rodape__cols">
+        <div class="rodape__col">
+          <h2>Unidade</h2>
+          <p>{{endereco}}</p>
+          <p>{{horarios}}</p>
+          <p>{{horariosFeriados}}</p>
+        </div>
+        <div class="rodape__col">
+          <h2>Contato</h2>
+          <p>Telefone {{telefone}}</p>
+          <p>WhatsApp {{whatsapp_exibir}}</p>
+        </div>
+        <div class="rodape__col">
+          <h2>Navegue</h2>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#planos">Planos</a></li>
+            <li><a href="#app">ForteFit App</a></li>
+            <li><a href="#conheca">A unidade</a></li>
+            <li><a href="#contato">Dúvidas</a></li>
+          </ul>
+        </div>
+        <div class="rodape__col">
+          <h2>Empresa</h2>
+          <p>{{razaoSocial}}</p>
+          <p>CNPJ {{cnpj}}</p>
+          <p><a href="privacidade.html">Política de privacidade</a></p>
+        </div>
+      </div>
+      <a class="rodape__marca" href="#inicio" aria-label="ForteFit, voltar ao início">
+        <img src="img/logo-laranja-curta.svg" width="850" height="215" alt="" loading="lazy">
+      </a>
+      <div class="rodape__fim">
+        <p>© {{ano}} ForteFit Academia. Todos os direitos reservados.</p>
+        <p>Desenvolvido por {{#if desenvolvedorUrl}}<a href="{{desenvolvedorUrl}}" rel="noopener" target="_blank">Thiago Labs<span class="sr-only"> (abre em nova aba)</span></a>{{else}}Thiago Labs{{/if}}</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="barra-cta" id="barra-cta" hidden>
+    <p>Quer conhecer a ForteFit?</p>
+    <a class="btn btn--primario btn--compacto" href="#conheca">Agendar visita</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
