@@ -11,6 +11,7 @@
 
   const definirMenu = (aberto) => {
     botao.setAttribute('aria-expanded', String(aberto));
+    botao.setAttribute('aria-label', aberto ? 'Fechar menu' : 'Abrir menu');
     menu.classList.toggle('menu--aberto', aberto);
   };
 

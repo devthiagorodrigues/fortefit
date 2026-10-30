@@ -70,7 +70,7 @@ strong { font-weight: 650; }
 .topo__logo { display: block; flex: none; line-height: 0; }
 .topo__logo img { width: 150px; height: auto; }
 
-.menu-btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 8px 16px; background: var(--grafite-3); color: #fff; border: 0; border-radius: 999px; font: 650 .9375rem var(--fonte-titulo); cursor: pointer; }
+.menu-btn { display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; padding: 0; background: var(--grafite-3); color: #fff; border: 0; border-radius: 50%; cursor: pointer; }
 .menu-btn__icone, .menu-btn__icone::before, .menu-btn__icone::after { display: block; width: 18px; height: 2px; background: currentColor; border-radius: 2px; transition: transform .2s; }
 .menu-btn__icone { position: relative; }
 .menu-btn__icone::before, .menu-btn__icone::after { content: ""; position: absolute; left: 0; }
